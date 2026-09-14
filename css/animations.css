@@ -1,0 +1,112 @@
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  z-index: 100;
+  pointer-events: none;
+}
+a,
+button {
+  transition:
+    color 0.22s ease,
+    background-color 0.22s ease,
+    border-color 0.22s ease;
+}
+.title-mask > span {
+  animation: title-enter 1.15s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.title-mask:nth-child(2) > span {
+  animation-delay: 0.12s;
+}
+@keyframes title-enter {
+  from {
+    transform: translateY(115%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.reveal.is-pending {
+  opacity: 0;
+  transform: translateY(28px);
+}
+.reveal {
+  transition:
+    opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.skill-group[open] .skill-content {
+  animation: skill-enter 0.45s ease both;
+}
+.skill-group[open] .skill-meter i {
+  animation: meter-enter 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes skill-enter {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes meter-enter {
+  from {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  to {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+.game-field.is-playing .game-target {
+  animation: target-enter 0.18s ease-out;
+}
+@keyframes target-enter {
+  from {
+    opacity: 0.3;
+    scale: 0.75;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+.app-window {
+  transition:
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.7s;
+}
+@media (hover: hover) {
+  .app-window:hover {
+    transform: perspective(1400px) rotateY(0) rotateX(0);
+    box-shadow: 8px 14px 0 #07080C;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal.is-pending {
+    opacity: 1;
+    transform: none;
+  }
+  .app-window {
+    transform: none !important;
+  }
+}
