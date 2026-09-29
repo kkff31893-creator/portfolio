@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>doting — Дмитрий Каменских · Креативный разработчик</title>
+<meta name="description" content="Интерактивные проекты, эксперименты и цифровые впечатления. Портфолио doting — Дмитрия Каменских. Telegram: @doting_w">
+<meta name="author" content="doting — Дмитрий Каменских">
+<meta name="theme-color" content="#f5f5f7">
+<meta property="og:title" content="doting — Дмитрий Каменских">
+<meta property="og:description" content="Интерактивные проекты, эксперименты и цифровые впечатления.">
+<meta property="og:locale" content="ru_RU">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='%231d1d1f'/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-cyr.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.className = 'js';</script>
+</head>
+<body>
+
+<a class="skip" href="#work">Перейти к работам</a>
+
+<canvas class="stage" aria-hidden="true"></canvas>
+
+<!-- ============ LOADER ============ -->
+<div class="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <div class="loader__count"><span class="loader__num">0</span></div>
+    <p class="loader__label">Рендеринг сцен</p>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" data-nav>
+  <a class="nav__brand" href="#top" data-magnetic="0.25" data-cursor="stick" aria-label="doting — наверх">
+    <span class="nav__mark"></span><span class="roll" data-roll>doting</span>
+  </a>
+  <nav class="nav__links" aria-label="Основная навигация">
+    <span class="nav__pill" aria-hidden="true"></span>
+    <a href="#work" data-nav-link="work"><span class="roll" data-roll>Работы</span></a>
+    <a href="#experiments" data-nav-link="experiments"><span class="roll" data-roll>Эксперименты</span></a>
+    <a href="#about" data-nav-link="about"><span class="roll" data-roll>Обо мне</span></a>
+    <a href="#contact" data-nav-link="contact"><span class="roll" data-roll>Контакты</span></a>
+  </nav>
+  <button class="nav__menu" type="button" aria-expanded="false" aria-controls="menu" data-magnetic="0.3">
+    <span class="nav__menu-label">Меню</span><span class="nav__menu-icon"><i></i><i></i></span>
+  </button>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <nav class="menu__links" aria-label="Мобильная навигация">
+    <a href="#work"><span>Работы</span></a>
+    <a href="#experiments"><span>Эксперименты</span></a>
+    <a href="#about"><span>Обо мне</span></a>
+    <a href="#contact"><span>Контакты</span></a>
+  </nav>
+  <a class="menu__foot" href="https://t.me/doting_w" target="_blank" rel="noopener">Telegram — <b>@doting_w</b></a>
+</div>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top" data-bg="#f5f5f7" data-theme="light">
+    <h1 class="hero__title" data-hero-title aria-label="Цифровой креативный разработчик">
+      <span>Цифровой</span>
+      <span>Креативный</span>
+      <span>Разработчик</span>
+    </h1>
+    <div class="hero__foot wrap">
+      <p class="hero__sub" data-intro>Интерактивные проекты, эксперименты и&nbsp;цифровые впечатления.</p>
+      <div class="hero__scroll" data-intro aria-hidden="true"><span class="hero__scroll-line"><i></i></span><span>Листайте, чтобы исследовать ↓</span></div>
+      <p class="hero__meta hero__meta--r" data-intro>doting <span class="dim">— Дмитрий Каменских</span><br><span class="dim">Портфолио © 2026</span></p>
+    </div>
+  </section>
+
+  <!-- ============ WORK INDEX ============ -->
+  <section class="index" id="work" data-bg="#f5f5f7" data-theme="light" data-group="work">
+    <div class="index__head wrap">
+      <p class="eyebrow" data-reveal="fade">Избранные работы</p>
+      <p class="eyebrow dim" data-reveal="fade">(04)</p>
+    </div>
+    <h2 class="index__mask" data-shot-bg="lumen-a"><span>Работы</span></h2>
+    <ol class="index__list wrap">
+      <li class="index__row">
+        <a href="#lumen" data-goto="lumen" data-preview="0" data-cursor="view" data-cursor-label="Смотреть">
+          <span class="index__num">01</span>
+          <span class="index__title">Lumen</span>
+          <span class="index__kind">Интерактивная инсталляция</span>
+          <span class="index__year">2026</span>
+          <span class="index__arrow" aria-hidden="true"><svg class="ic"><use href="#i-e"/></svg></span>
+        </a>
+      </li>
+      <li class="index__row">
+        <a href="#meridian" data-goto="meridian" data-preview="1" data-cursor="view" data-cursor-label="Смотреть">
+          <span class="index__num">02</span>
+          <span class="index__title">Meridian</span>
+          <span class="index__kind">Пространственная айдентика</span>
+          <span class="index__year">2025</span>
+          <span class="index__arrow" aria-hidden="true"><svg class="ic"><use href="#i-e"/></svg></span>
+        </a>
+      </li>
+      <li class="index__row">
+        <a href="#orbit" data-goto="orbit" data-preview="2" data-cursor="view" data-cursor-label="Смотреть">
+          <span class="index__num">03</span>
+          <span class="index__title">Orbit</span>
+          <span class="index__kind">Продуктовый опыт</span>
+          <span class="index__year">2025</span>
+          <span class="index__arrow" aria-hidden="true"><svg class="ic"><use href="#i-e"/></svg></span>
+        </a>
+      </li>
+      <li class="index__row">
+        <a href="#still" data-goto="still" data-preview="3" data-cursor="view" data-cursor-label="Смотреть">
+          <span class="index__num">04</span>
+          <span class="index__title">Still</span>
+          <span class="index__kind">Визуальная серия</span>
+          <span class="index__year">2024</span>
+          <span class="index__arrow" aria-hidden="true"><svg class="ic"><use href="#i-e"/></svg></span>
+        </a>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ 01 LUMEN — fullscreen project ============ -->
+  <section class="pfull" id="lumen" data-bg="#000000" data-theme="dark" data-group="work">
+    <div class="pfull__top wrap">
+      <span>01 — Lumen</span>
+      <span class="dim">Интерактивная инсталляция</span>
+    </div>
+    <div class="pfull__frame" data-open="lumen" data-cursor="view" data-cursor-label="Смотреть" role="button" tabindex="0">
+      <div class="pfull__media"><img data-shot="lumen-a" alt="Стеклянные пластины, выстроенные дугой вокруг единственного источника света"></div>
+      <div class="pfull__shade"></div>
+      <div class="pfull__meta">
+        <p class="pfull__index">01</p>
+        <h3 class="pfull__title" data-split="chars">Lumen</h3>
+        <p class="pfull__kind">Комната света, которая слушает.</p>
+      </div>
+      <dl class="pfull__info">
+        <div><dt>Год</dt><dd>2026</dd></div>
+        <div><dt>Роль</dt><dd>Дизайн, WebGL</dd></div>
+        <div><dt>Тип</dt><dd>Инсталляция</dd></div>
+        <div class="pfull__go"><dt></dt><dd>Смотреть проект <svg class="ic"><use href="#i-ne"/></svg></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ 02 MERIDIAN — horizontal showcase ============ -->
+  <section class="phz" id="meridian" data-bg="#efeeec" data-theme="light" data-group="work">
+    <div class="phz__track">
+      <div class="phz__panel phz__intro">
+        <p class="eyebrow">02 — Meridian</p>
+        <h3 class="phz__title" data-split="chars">Meridian</h3>
+        <p class="phz__line">Айдентика, выросшая из архитектуры: монолитная форма, мягкая тень и&nbsp;одна непрерывная линия.</p>
+        <p class="phz__hint dim" aria-hidden="true"><span>Листайте вниз</span><i></i></p>
+      </div>
+      <figure class="phz__panel phz__fig phz__fig--wide" data-open="meridian" data-cursor="view" data-cursor-label="Смотреть" data-tilt>
+        <div class="phz__media"><img data-shot="meridian-1" alt="Гипсовая арка и хромированная сфера"><span class="ptag">Смотреть проект <svg class="ic"><use href="#i-ne"/></svg></span></div>
+        <figcaption><span>01</span><span>Арка</span></figcaption>
+      </figure>
+      <figure class="phz__panel phz__fig phz__fig--tall" data-open="meridian" data-cursor="view" data-cursor-label="Смотреть" data-tilt>
+        <div class="phz__media"><img data-shot="meridian-2" alt="Стопка каменных плит"><span class="ptag">Смотреть проект <svg class="ic"><use href="#i-ne"/></svg></span></div>
+        <figcaption><span>02</span><span>Камни</span></figcaption>
+      </figure>
+      <div class="phz__panel phz__type" aria-hidden="true">
+        <span data-depth="-0.6">Форма</span>
+        <span data-depth="0.4">следует</span>
+        <span data-depth="-0.2">за&nbsp;светом.</span>
+      </div>
+      <figure class="phz__panel phz__fig phz__fig--wide" data-open="meridian" data-cursor="view" data-cursor-label="Смотреть" data-tilt>
+        <div class="phz__media"><img data-shot="meridian-3" alt="Колонны, пересечённые одной чёрной линией"><span class="ptag">Смотреть проект <svg class="ic"><use href="#i-ne"/></svg></span></div>
+        <figcaption><span>03</span><span>Горизонт</span></figcaption>
+      </figure>
+      <figure class="phz__panel phz__fig phz__fig--tall" data-open="meridian" data-cursor="view" data-cursor-label="Смотреть" data-tilt>
+        <div class="phz__media"><img data-shot="meridian-4" alt="Сфера, покоящаяся внутри арки"><span class="ptag">Смотреть проект <svg class="ic"><use href="#i-ne"/></svg></span></div>
+        <figcaption><span>04</span><span>Покой</span></figcaption>
+      </figure>
+      <figure class="phz__panel phz__fig phz__fig--wide" data-open="meridian" data-cursor="view" data-cursor-label="Смотреть" data-tilt>
+        <div class="phz__media"><img data-shot="meridian-5" alt="Лестница, ведущая к монолиту"><span class="ptag">Смотреть проект <svg class="ic"><use href="#i-ne"/></svg></span></div>
+        <figcaption><span>05</span><span>Подъём</span></figcaption>
+      </figure>
+      <div class="phz__panel phz__end">
+        <button class="circle-btn" type="button" data-open="meridian" data-magnetic="0.45" data-cursor="stick">
+          <span class="circle-btn__fill"></span>
+          <span class="circle-btn__text">Смотреть кейс</span>
+        </button>
+      </div>
+    </div>
+    <div class="phz__counter wrap" aria-hidden="true"><span class="phz__count">01</span><span class="dim">/ 05</span></div>
+  </section>
+
+  <!-- ============ 03 ORBIT — 3D showcase ============ -->
+  <section class="porb" id="orbit" data-bg="#000000" data-theme="dark" data-group="work">
+    <div class="porb__pin" data-cursor="drag">
+      <div class="porb__intro">
+        <p class="eyebrow">03 — Orbit</p>
+        <h3 class="porb__title" data-split="chars">Orbit</h3>
+        <p class="porb__kind dim">Звуковой объект, показанный слой за&nbsp;слоем.</p>
+      </div>
+      <div class="callout" data-callout="0"><i class="callout__dot" data-n="1"></i><span class="callout__line"></span><p class="callout__label"><b>Акустическое стекло</b><span>Бесшовный корпус 360°</span></p></div>
+      <div class="callout callout--left" data-callout="1"><i class="callout__dot" data-n="2"></i><span class="callout__line"></span><p class="callout__label"><b>Фрезерованное кольцо</b><span>Сенсорное управление</span></p></div>
+      <div class="callout" data-callout="2"><i class="callout__dot" data-n="3"></i><span class="callout__line"></span><p class="callout__label"><b>Керамическое основание</b><span>Низкочастотная камера</span></p></div>
+      <ol class="porb__legend" aria-hidden="true">
+        <li><i>1</i><p><b>Акустическое стекло</b><span>Бесшовный корпус 360°</span></p></li>
+        <li><i>2</i><p><b>Фрезерованное кольцо</b><span>Сенсорное управление</span></p></li>
+        <li><i>3</i><p><b>Керамическое основание</b><span>Низкочастотная камера</span></p></li>
+      </ol>
+      <div class="porb__outro">
+        <p class="porb__outro-line">Orbit <span class="dim">— продуктовый опыт, 2025</span></p>
+        <button class="pill pill--light" type="button" data-open="orbit" data-magnetic="0.3" data-cursor="stick">
+          <span class="pill__fill"></span><span class="pill__text roll" data-roll>Смотреть проект</span>
+        </button>
+      </div>
+      <p class="porb__hint dim" aria-hidden="true" data-hint-touch="Проведите пальцем, чтобы вращать">Тяните, чтобы вращать</p>
+    </div>
+  </section>
+
+  <!-- ============ 04 STILL — minimal image showcase ============ -->
+  <section class="pstill" id="still" data-bg="#ffffff" data-theme="light" data-group="work">
+    <header class="pstill__head wrap">
+      <p class="eyebrow" data-reveal="fade">04 — Still</p>
+      <h3 class="pstill__title" data-split="chars">Still</h3>
+      <p class="pstill__line dim" data-reveal="fade">Серия тихих предметов.</p>
+    </header>
+    <div class="pstill__grid wrap">
+      <figure class="still still--1" data-open="still" data-cursor="view" data-cursor-label="Смотреть" data-speed="-0.06">
+        <div class="still__media" data-tilt><img data-shot="still-1" alt="Хромированная сфера на белом"><span class="ptag">Смотреть проект <svg class="ic"><use href="#i-ne"/></svg></span></div>
+        <figcaption><span>Хром</span><span class="dim">01</span></figcaption>
+      </figure>
+      <figure class="still still--2" data-open="still" data-cursor="view" data-cursor-label="Смотреть" data-speed="0.08">
+        <div class="still__media" data-tilt><img data-shot="still-2" alt="Чёрный глянцевый тор"><span class="ptag">Смотреть проект <svg class="ic"><use href="#i-ne"/></svg></span></div>
+        <figcaption><span>Обсидиан</span><span class="dim">02</span></figcaption>
+      </figure>
+      <figure class="still still--3" data-open="still" data-cursor="view" data-cursor-label="Смотреть" data-speed="-0.03">
+        <div class="still__media" data-tilt><img data-shot="still-3" alt="Стеклянный куб с хромированной сферой внутри"><span class="ptag">Смотреть проект <svg class="ic"><use href="#i-ne"/></svg></span></div>
+        <figcaption><span>Стекло</span><span class="dim">03</span></figcaption>
+      </figure>
+      <figure class="still still--4" data-open="still" data-cursor="view" data-cursor-label="Смотреть" data-speed="0.05">
+        <div class="still__media" data-tilt><img data-shot="still-4" alt="Три уравновешенных камня"><span class="ptag">Смотреть проект <svg class="ic"><use href="#i-ne"/></svg></span></div>
+        <figcaption><span>Баланс</span><span class="dim">04</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIMENTS ============ -->
+  <section class="exp" id="experiments" data-bg="#0a0a0b" data-theme="dark" data-group="experiments">
+    <header class="exp__head wrap">
+      <p class="eyebrow" data-reveal="fade">Эксперименты</p>
+      <h2 class="exp__title" data-split="chars">Опыты</h2>
+      <p class="exp__line dim" data-reveal="fade">Маленькие этюды о&nbsp;движении, материи и&nbsp;касании.</p>
+    </header>
+    <div class="exp__grid wrap">
+      <div class="xp xp--a" data-xp="field" data-cursor="hint" data-cursor-label="Ведите">
+        <span class="xp__num">01</span>
+        <p class="xp__label">Поле частиц <span class="dim">— волны</span></p>
+        <p class="xp__hint" data-hint-touch="Проведите пальцем">Ведите курсором</p>
+      </div>
+      <div class="xp xp--b" data-xp="liquid" data-cursor="hint" data-cursor-label="Нажмите">
+        <span class="xp__num">02</span>
+        <p class="xp__label">Жидкий объект <span class="dim">— металл</span></p>
+        <p class="xp__hint" data-hint-touch="Проведите · Коснитесь">Ведите · Нажмите</p>
+      </div>
+      <div class="xp xp--c xp--type" data-xp="type" data-cursor="hint" data-cursor-label="Ближе">
+        <p class="mt" data-mt aria-label="Притяжение">Притяжение</p>
+        <span class="xp__num">03</span>
+        <p class="xp__label">Магнитная типографика <span class="dim">— вариативный шрифт</span></p>
+        <p class="xp__hint" data-hint-touch="Проведите по слову">Приблизьте курсор</p>
+      </div>
+      <div class="xp xp--d" data-xp="refract" data-cursor="hint" data-cursor-label="Нажмите">
+        <span class="xp__num">04</span>
+        <p class="xp__label">Искажение изображения <span class="dim">— линза</span></p>
+        <p class="xp__hint" data-hint-touch="Проведите · Коснитесь">Ведите · Нажмите</p>
+      </div>
+      <div class="xp xp--e" data-xp="gravity" data-cursor="hint" data-cursor-label="Тяните">
+        <span class="xp__num">05</span>
+        <p class="xp__label">Физика <span class="dim">— притяжение и столкновения</span></p>
+        <p class="xp__hint" data-hint-touch="Проведите · Коснитесь">Притягивайте · Нажмите</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about" data-bg="#f5f5f7" data-theme="light" data-group="about">
+    <div class="about__intro wrap">
+      <p class="eyebrow" data-reveal="fade">Обо мне</p>
+      <p class="about__statement" data-words>Создаю цифровые впечатления, интерфейсы и эксперименты.</p>
+      <div class="about__links" data-reveal="fade">
+        <p class="about__name">doting <span class="dim">— Дмитрий Каменских</span></p>
+        <ul>
+          <li><a class="link" href="https://t.me/doting_w" target="_blank" rel="noopener" data-cursor="stick"><span class="roll" data-roll>Telegram</span><svg class="ic" aria-hidden="true"><use href="#i-ne"/></svg></a></li>
+          <li><a class="link" href="https://github.com/" target="_blank" rel="noopener" data-cursor="stick" data-link="github"><span class="roll" data-roll>GitHub</span><svg class="ic" aria-hidden="true"><use href="#i-ne"/></svg></a></li>
+          <li><a class="link" href="https://www.behance.net/" target="_blank" rel="noopener" data-cursor="stick" data-link="behance"><span class="roll" data-roll>Behance</span><svg class="ic" aria-hidden="true"><use href="#i-ne"/></svg></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="zoom">
+      <div class="zoom__grid">
+        <figure class="zoom__cell"><img data-shot="still-1" alt=""></figure>
+        <figure class="zoom__cell"><img data-shot="meridian-2" alt=""></figure>
+        <figure class="zoom__cell"><img data-shot="orbit-2" alt=""></figure>
+        <figure class="zoom__cell"><img data-shot="meridian-4" alt=""></figure>
+        <figure class="zoom__cell"><img data-shot="still-3" alt=""></figure>
+        <figure class="zoom__cell"><img data-shot="meridian-3" alt=""></figure>
+        <figure class="zoom__cell"><img data-shot="lumen-c" alt=""></figure>
+        <figure class="zoom__cell zoom__cell--center"><img data-shot="orbit-1" alt=""></figure>
+        <figure class="zoom__cell"><img data-shot="meridian-1" alt=""></figure>
+        <figure class="zoom__cell"><img data-shot="still-hero" alt=""></figure>
+        <figure class="zoom__cell"><img data-shot="still-2" alt=""></figure>
+        <figure class="zoom__cell"><img data-shot="lumen-b" alt=""></figure>
+        <figure class="zoom__cell"><img data-shot="orbit-3" alt=""></figure>
+        <figure class="zoom__cell"><img data-shot="meridian-5" alt=""></figure>
+        <figure class="zoom__cell"><img data-shot="still-4" alt=""></figure>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ CONTACT — the title turns to dust, the dust becomes the handle ============ -->
+<footer class="contact" id="contact" data-bg="#000000" data-theme="dark" data-group="contact">
+  <div class="contact__top wrap">
+    <p class="eyebrow">Контакты</p>
+    <p class="eyebrow dim">Без форм и анкет — просто напишите</p>
+  </div>
+
+  <h2 class="contact__title" data-split="chars">Сделаем что-то особенное.</h2>
+
+  <div class="finale">
+    <p class="finale__eyebrow"><span class="finale__dot" aria-hidden="true"></span>Telegram — отвечаю быстрее всего</p>
+    <a class="finale__handle" href="https://t.me/doting_w" target="_blank" rel="noopener" data-handle data-cursor="tag" data-cursor-label="Написать ↗" aria-label="Telegram @doting_w">@doting_w</a>
+    <div class="finale__actions">
+      <a class="pill pill--solid" href="https://t.me/doting_w" target="_blank" rel="noopener" data-magnetic="0.3" data-cursor="stick">
+        <span class="pill__fill"></span><span class="pill__text roll" data-roll>Написать в Telegram</span><svg class="ic pill__ic" aria-hidden="true"><use href="#i-ne"/></svg>
+      </a>
+      <button class="pill pill--light" type="button" data-copy="@doting_w" data-magnetic="0.3" data-cursor="stick">
+        <span class="pill__fill"></span><span class="pill__text" data-copy-label aria-live="polite">Скопировать ник</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="contact__bottom wrap">
+    <ul class="contact__links">
+      <li><a class="link" href="https://t.me/doting_w" target="_blank" rel="noopener" data-cursor="stick"><span class="roll" data-roll>Telegram</span><svg class="ic" aria-hidden="true"><use href="#i-ne"/></svg></a></li>
+      <li><a class="link" href="mailto:hello@example.com" data-cursor="stick" data-link="email"><span class="roll" data-roll>Почта</span><svg class="ic" aria-hidden="true"><use href="#i-ne"/></svg></a></li>
+      <li><a class="link" href="https://github.com/" target="_blank" rel="noopener" data-cursor="stick" data-link="github"><span class="roll" data-roll>GitHub</span><svg class="ic" aria-hidden="true"><use href="#i-ne"/></svg></a></li>
+      <li><a class="link" href="https://www.linkedin.com/" target="_blank" rel="noopener" data-cursor="stick" data-link="linkedin"><span class="roll" data-roll>LinkedIn</span><svg class="ic" aria-hidden="true"><use href="#i-ne"/></svg></a></li>
+      <li><a class="link" href="https://www.behance.net/" target="_blank" rel="noopener" data-cursor="stick" data-link="behance"><span class="roll" data-roll>Behance</span><svg class="ic" aria-hidden="true"><use href="#i-ne"/></svg></a></li>
+    </ul>
+    <p class="contact__credit">Сайт сделал <b>doting</b> — Дмитрий Каменских · © 2026</p>
+    <div class="contact__end">
+      <span class="contact__clock">Местное время <b data-clock>--:--</b></span>
+      <button class="totop" type="button" data-magnetic="0.35" data-cursor="stick"><span class="roll" data-roll>Наверх</span><i aria-hidden="true">↑</i></button>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ OVERLAYS ============ -->
+<div class="preview" aria-hidden="true">
+  <div class="preview__track">
+    <div class="preview__item"><img data-shot="lumen-b" alt=""></div>
+    <div class="preview__item"><img data-shot="meridian-4" alt=""></div>
+    <div class="preview__item"><img data-shot="orbit-2" alt=""></div>
+    <div class="preview__item"><img data-shot="still-1" alt=""></div>
+  </div>
+</div>
+
+<div class="detail" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Проект">
+  <div class="detail__backdrop"></div>
+  <div class="detail__scroller" data-lenis-prevent>
+    <header class="detail__hero">
+      <div class="detail__hero-media"><img alt=""></div>
+      <div class="detail__hero-shade"></div>
+      <div class="detail__hero-text wrap">
+        <p class="detail__index"></p>
+        <h2 class="detail__title"></h2>
+        <p class="detail__kind"></p>
+      </div>
+      <p class="detail__cue" aria-hidden="true">Листайте ↓</p>
+    </header>
+    <div class="detail__body">
+      <div class="detail__intro wrap">
+        <p class="detail__lead"></p>
+        <dl class="detail__meta"></dl>
+      </div>
+      <div class="detail__gallery wrap"></div>
+      <button class="detail__next" type="button" data-cursor="view" data-cursor-label="Дальше">
+        <span class="detail__next-label wrap">Следующий проект</span>
+        <span class="detail__next-title"></span>
+        <span class="detail__next-media"><img alt=""></span>
+      </button>
+    </div>
+  </div>
+  <button class="detail__close" type="button" aria-label="Закрыть проект" data-magnetic="0.3" data-cursor="stick">
+    <span class="roll" data-roll>Закрыть</span><i aria-hidden="true"></i>
+  </button>
+</div>
+
+<div class="ghost" aria-hidden="true"><img alt=""></div>
+
+<div class="cursor" aria-hidden="true">
+  <div class="cursor__ring"><span class="cursor__label"></span></div>
+  <div class="cursor__dot"></div>
+</div>
+
+<svg class="defs" width="0" height="0" aria-hidden="true" focusable="false">
+  <symbol id="i-ne" viewBox="0 0 16 16"><path d="M4.5 11.5 11.5 4.5M5.8 4.5h5.7v5.7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-e" viewBox="0 0 16 16"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <filter id="distort" x="-10%" y="-10%" width="120%" height="120%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.008 0.012" numOctaves="2" seed="3" result="noise"/>
+    <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+
+<noscript><style>.loader{display:none}</style></noscript>
+
+<script src="vendor/three.min.js"></script>
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="js/core.js"></script>
+<script src="js/materials.js"></script>
+<script src="js/baker.js"></script>
+<script src="js/stage.js"></script>
+<script src="js/experiments.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/scenes.js"></script>
+<script src="js/detail.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
